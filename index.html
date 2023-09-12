@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Burst </title>
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/e4fe01948c.js" crossorigin="anonymous"></script>
+    <!-- tailwind & daisyUI link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        .all-lato {
+            font-family: 'Lato', sans-serif;
+        }
+
+        /* #input-icon{
+            <i class="fa-duotone fa-magnifying-glass"></i>
+        } */
+    </style>
+    <!-- tailwind customize -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        "fruit-navbar-color": '#F85559',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="all-lato container mx-auto">
+    <header class="mt-8">
+        <nav class="bg-fruit-navbar-color rounded-full flex items-center justify-between px-14 py-6">
+            <ul class=" lg:flex gap-6 font-medium text-white hidden">
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">All Fruits</a></li>
+            </ul>
+            <h2 class="flex items-center gap-3 text-white text-4xl font-bold ">
+                <img class="w-10 h-10" src="./images/logo.png" alt="">
+                Fruit Burst
+            </h2>
+            <div class=" lg:flex w-1/5 text-center hidden">
+                <form class="relative">
+                    <i class="absolute top-4 right-5 fa-solid fa-magnifying-glass"></i>
+                    <input class="w-full rounded-full h-12 px-7 py-4 border-none" type="text" placeholder="Search here">
+                </form>
+            </div>
+            <div class=" dropdown lg:hidden">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h7" />
+                    </svg>
+                </label>
+                <ul class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box ">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">All Fruits</a></li>
+                    <div class="relative w-full text-center ">
+                        <i class="absolute top-4 right-5 fa-solid fa-magnifying-glass"></i>
+                        <input class="w-full rounded-full h-12 px-7 py-4 border-none" type="text"
+                            placeholder="Search here">
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
